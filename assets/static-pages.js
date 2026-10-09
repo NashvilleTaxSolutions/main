@@ -156,6 +156,7 @@ const routeLinks = [
   ["About", "about/"],
   ["Our Team", "our-team/"],
   ["Services", "services/"],
+  ["Blog", "blog/"],
   ["FAQ", "faq/"],
   ["Community", "community/"],
   ["Contact", "contact/"]
