@@ -1,4 +1,8 @@
 const app = document.getElementById("app");
+const brandStylesheet = document.createElement("link");
+brandStylesheet.rel = "stylesheet";
+brandStylesheet.href = new URL("assets/brand-refresh.css", document.baseURI).href;
+document.head.append(brandStylesheet);
 const currentPath = location.pathname.replace(/\/+$/, "");
 const blogPathIndex = currentPath.lastIndexOf("/blog/");
 const postSlug = blogPathIndex === -1 ? "" : currentPath.slice(blogPathIndex + 6);

@@ -192,6 +192,10 @@ const faqsMarkup = (faqs) => `<div class="faq-list">${faqs.map(([question, answe
 const route = document.body.dataset.page;
 const page = pages[route];
 const app = document.getElementById("app");
+const brandStylesheet = document.createElement("link");
+brandStylesheet.rel = "stylesheet";
+brandStylesheet.href = new URL("assets/brand-refresh.css", document.baseURI).href;
+document.head.append(brandStylesheet);
 
 if (page && app) {
   document.title = `${page.eyebrow} — Nashville Tax Solutions`;

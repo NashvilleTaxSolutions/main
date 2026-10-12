@@ -1,4 +1,8 @@
 const blogPreviewRoot = document.querySelector("main");
+const brandStylesheet = document.createElement("link");
+brandStylesheet.rel = "stylesheet";
+brandStylesheet.href = new URL("assets/brand-refresh.css", document.baseURI).href;
+document.head.append(brandStylesheet);
 
 function setupHomeNavigation() {
   const homeNavigation = document.querySelector("header nav");
